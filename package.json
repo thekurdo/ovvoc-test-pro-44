@@ -1,0 +1,23 @@
+{
+  "name": "ovvoc-test-pro-44",
+  "version": "1.0.0",
+  "description": "Full auth stack with Express + Mongoose + Passport + JWT",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node test/app.test.js"
+  },
+  "dependencies": {
+    "express": "4.18.2",
+    "mongoose": "6.12.3",
+    "passport": "0.6.0",
+    "passport-local": "1.0.0",
+    "jsonwebtoken": "8.5.1",
+    "express-session": "1.17.3",
+    "bcryptjs": "2.4.3",
+    "cors": "2.8.5"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
