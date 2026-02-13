@@ -189,7 +189,7 @@ test('Express Router creates routes correctly', function() {
 test('Express 4 wildcard route pattern works', function() {
   const express = require('express');
   const router = express.Router();
-  router.get('*', function(req, res) {
+  router.get('/{*path}', function(req, res) {
     res.status(404).json({ error: 'Not found' });
   });
   assert(router.stack.length === 1);
