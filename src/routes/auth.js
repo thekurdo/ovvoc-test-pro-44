@@ -174,7 +174,7 @@ router.delete('/account', requireAuth, async function(req, res) {
 });
 
 // Express 4 wildcard — must become /{*path} in Express 5
-router.get('*', function(req, res) {
+router.get('/{*path}', function(req, res) {
   res.status(404).json({ error: 'Auth route not found' });
 });
 

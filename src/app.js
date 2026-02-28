@@ -40,7 +40,7 @@ app.get('/health', function(req, res) {
 app.use('/auth', authRoutes);
 
 // Express 4 wildcard catch-all — must become /{*path} in Express 5
-app.get('*', function(req, res) {
+app.get('/{*path}', function(req, res) {
   res.status(404).json({ error: 'Route not found' });
 });
 
